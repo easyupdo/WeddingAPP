@@ -1,0 +1,15 @@
+[Unit]
+Description=start wedding app
+Documentation=
+After=network.target
+Wants=
+Requires=
+
+[Service]
+ExecStart=start.sh
+ExecStop=
+ExecReload=reload.sh
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
