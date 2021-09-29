@@ -1,0 +1,39 @@
+.tiny-heart {
+  position: absolute;
+  opacity: 50;
+  background-color: #D90429;
+  box-shadow: 0px 0px 50px 4px rgba(239, 35, 60, 0.7);
+  animation: animated-heart infinite ease-in;
+}
+.tiny-heart:before, .tiny-heart:after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #D90429;
+}
+.tiny-heart:before {
+  transform: translateX(-50%);
+}
+.tiny-heart:after {
+  transform: translateY(-50%);
+}
+
+
+@keyframes animated-heart {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(45deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, -40%) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -1000%) rotate(45deg);
+  }
+}

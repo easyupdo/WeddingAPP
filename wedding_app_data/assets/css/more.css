@@ -1,0 +1,9 @@
+.MORE{
+    text-align: center;
+    border-style:solid;
+    border-radius: 50%;
+    border-color: crimson;
+    margin: 0 40%;
+    font-size: 30px;
+    background-color: rgb(245, 174, 188);
+}
